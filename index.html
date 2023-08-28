@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Interactive comments section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .response{
+      width: 46rem;
+      margin-left: 0rem;
+    }
+    .reply{
+      width: 42rem;
+      margin-left: 4rem;
+    }
+    @media (max-width: 375px) {      
+      .response {
+        width: auto;
+        margin-left: auto;
+      }
+      .reply{
+        width: auto;
+        margin-left: auto;
+      }
+    }
+  </style>
+  <script src="./app.js"></script>
+</head>
+<body class="bg-slate-100 font-rubik">
+  <main id="main" class="w-[90%] mx-auto mt-5 lg:justify-center lg:grid ">
+  </main>
+  <div id="replyBox" class="bg-white shadow-sm flex lg:flex-col flex-wrap rounded-xl mb-5 w-[90%] mx-auto lg:w-[46rem] lg:relative">
+    <textarea id="replyInput" class="lg:ml-5 w-[90%] lg:w-[72%] lg:ml-[5rem] h-24 border mx-auto mt-5 rounded-lg mb-5 resize-none pt-1 pl-3" placeholder="Add a comment..."></textarea>
+    <img id="currentUserImage" src="./images/avatars/image-amyrobson.png" class="mb-4 ml-5 mr-5 w-10 h-10 rounded-full lg:absolute lg:mt-5">
+    <button id="replyBtn" class="bg-indigo-700 hover:bg-indigo-400 text-white font-bold rounded-lg px-5 py-2 mb-5 ml-[8rem] lg:absolute lg:right-5 lg:top-0 lg:mt-5 uppercase">Send</button>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">bitc0de</a>.
+  </div>
+</body>
+</html>
